@@ -30,14 +30,7 @@ Traditional models, like RNNs, process text sequentially to maintain word order.
 
 Positional encoding vectors are added to embedding vectors, preserving order without distorting the embedding values.
 
-### Code Implementation
-
-```python
-# Code for positional encoding
-```
-
-
-## Image Vectorization
+### Image Vectorization
 
 Here, Mobilenet-v3 (pretrained on ImageNet) is used to convert images into vectors. Resnet-50, Inception-Net, or other pretrained models can also be used. The top layers provide salient features, while lower layers capture detailed image features.
 
@@ -66,7 +59,6 @@ Attention calculates the probability of context vectors (words or image segments
 * **Cross Attention** : When query vectors (Q) come from a different source than key (K) and value (V).
 * **Self Attention** : When Q, K, and V come from the same source.
 * **Causal Self Attention** : Used during text generation to avoid looking ahead at future words.
-
 
 ## Loss and Accuracy Functions
 
